@@ -1,0 +1,597 @@
+"Halo, gue punya website CoffeeVan dengan halaman index, kopi, dan menu. Navbar, footer, dan style CSS harus sama di semua halaman.
+Ini potongan HTML index: <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoffeeVan</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm py-3 custom-navbar">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="#">CoffeeVan</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="kopi.html">Kopi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Member</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="#" class="btn btn-login">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="mb-3">Cerita Di Balik Cangkir</h1>
+      <p class="lead">CoffeeVan bukan sekadar kopi, tapi perjalanan yang menyatu dalam setiap tegukan.</p>
+    </div>
+  </section>
+
+  <!-- Cerita Kami Section -->
+<section class="section-padding cerita-kami">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-md-6">
+        <div class="cerita-img-wrapper">
+          <img src="images/89b8ffcc-df93-4a03-9ac7-fe2df531a307 1.jpg" alt="Coffee Van Story" class="img-fluid cerita-img">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-3">Cerita Kami</h2>
+        <p>
+          CoffeeVan berawal dari mimpi sederhana: menyajikan secangkir kopi hangat yang tidak hanya membangkitkan semangat, tapi juga menyentuh hati. Kami memulai dengan sebuah van tua yang dimodifikasi menjadi kedai kopi berjalan, menyusuri jalanan kota menyapa para pencinta kopi dengan senyum dan aroma arabika terbaik.
+        </p>
+        <p>
+          Dengan semangat komunitas dan cinta terhadap biji kopi berkualitas, CoffeeVan tumbuh menjadi ruang berbagi cerita, tempat beristirahat sejenak, dan pelarian dari hiruk-pikuk harian. Kami percaya, setiap tegukan kopi menyimpan kenangan dan percakapan yang bermakna.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="text-center py-4 footer">
+    <div class="logo-text">CoffeeVan</div>
+    <small class="d-block mt-2">© 2025 CoffeeVan. All rights reserved .</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+Ini potongan HTML kopi: <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Kami - CoffeeVan</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm py-3 custom-navbar">
+  <div class="container">
+    <a class="navbar-brand logo-text" href="#">CoffeeVan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kopi.html">Kopi</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Member</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-lg-block">
+      <a href="#" class="btn btn-login">Login</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Header Section -->
+<section class="kopi-parallax text-center">
+  <div class="kopi-overlay">
+    <div class="container">
+      <h2 class="kopi-title">Kopi Kami</h2>
+      <p class="kopi-subtitle">Jelajahi ragam cita rasa dari biji terbaik Nusantara.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Kopi Detail -->
+<section class="section-padding">
+  <div class="container">
+
+    <!-- Arabika -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/600x400/?arabica-coffee" alt="Arabika Coffee" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-md-6">
+        <h2>Arabika Specialty Grade</h2>
+        <p>Arabika kami berasal dari lereng Gunung Arjuno, Jawa Timur. Ditanam di ketinggian 1.200–1.600 mdpl, biji ini memancarkan aroma floral dengan rasa yang kompleks dan tingkat keasaman sedang.</p>
+        <p><strong>Pengolahan:</strong> Full Washed Process — buah kopi dikupas, difermentasi, lalu dicuci bersih dan dijemur di atas para-para selama 10-14 hari.</p>
+        <p><strong>Karakter Rasa:</strong> Asam segar seperti buah beri, aroma floral dan aftertaste yang bersih dan manis.</p>
+      </div>
+    </div>
+
+    <!-- Robusta -->
+    <div class="row mb-5 align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/600x400/?robusta-coffee" alt="Robusta Coffee" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-md-6">
+        <h2>Robusta Fine Grade</h2>
+        <p>Dipetik dari perkebunan dataran rendah di Lampung, robusta kami memiliki kandungan kafein yang tinggi dengan rasa yang kuat, pahit, dan tebal.</p>
+        <p><strong>Pengolahan:</strong> Semi-Washed — setelah dikupas, biji difermentasi singkat lalu dikeringkan bersama sebagian lendir untuk menjaga kekayaan rasa.</p>
+        <p><strong>Karakter Rasa:</strong> Body tebal, rasa earthy dan sedikit rasa coklat pahit di akhir.</p>
+      </div>
+    </div>
+
+    <!-- Honey Process -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/600x400/?coffee-processing" alt="Honey Process" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-md-6">
+        <h2>Honey Process</h2>
+        <p>Metode ini memadukan natural dan washed process. Biji kopi dikupas tapi dibiarkan dengan sisa lendir saat pengeringan, menghasilkan rasa manis dan tekstur lembut.</p>
+        <p><strong>Asal:</strong> Gayo, Aceh — dataran tinggi dengan suhu ideal untuk fermentasi alami.</p>
+        <p><strong>Karakter Rasa:</strong> Manis seperti karamel, aroma tropikal, dan keasaman medium.</p>
+      </div>
+    </div>
+
+    <!-- Natural Process -->
+    <div class="row mb-5 align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/600x400/?natural-coffee" alt="Natural Process" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-md-6">
+        <h2>Natural Process</h2>
+        <p>Metode tradisional ini melibatkan pengeringan buah kopi utuh di bawah sinar matahari. Tanpa air, hanya sinar dan waktu yang menjaga karakter buah.</p>
+        <p><strong>Asal:</strong> Bajawa, Flores — cocok untuk proses natural karena curah hujan rendah dan udara kering.</p>
+        <p><strong>Karakter Rasa:</strong> Rasa buah fermentasi, aroma winey, dan aftertaste fruity eksotis.</p>
+      </div>
+    </div>
+
+    <!-- Single Origin Lain -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-6">
+        <img src="https://source.unsplash.com/600x400/?indonesian-coffee" alt="Single Origin Indonesia" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-md-6">
+        <h2>Single Origin Nusantara</h2>
+        <p>Kami memiliki biji kopi dari berbagai penjuru tanah air: Toraja, Kintamani, Kerinci, Mandailing, dan lainnya. Setiap daerah menyimpan cerita dan cita rasa yang unik.</p>
+        <p><strong>Metode Pengolahan:</strong> Disesuaikan per daerah — dari natural, semi-washed hingga full-washed dan honey.</p>
+        <p><strong>Karakter Rasa:</strong> Bervariasi dari floral, fruity, nutty hingga spicy dan winey.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4 footer">
+  <div class="logo-text">CoffeeVan</div>
+  <small class="d-block mt-2">© 2025 CoffeeVan. All rights reserved.</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+Ini potongan HTML menu: <!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Temukan berbagai minuman kopi, non-kopi, dan makanan lezat dari CoffeeVan." />
+  <title>Menu CoffeeVan</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm py-3 custom-navbar">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="index.html">CoffeeVan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="kopi.html">Kopi</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="member.html">Member</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="#" class="btn btn-login">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section for Menu -->
+  <section class="kopi-parallax text-center">
+    <div class="kopi-overlay">
+      <div class="container">
+        <h2 class="kopi-title">Menu CoffeeVan</h2>
+        <p class="kopi-subtitle">Nikmati berbagai pilihan minuman kopi, non-kopi, dan makanan lezat dari kami.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Content -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Coffee Based -->
+        <div class="col">
+          <div class="card h-100 menu-card">
+            <img src="https://via.placeholder.com/400x200?text=Frappe+Blend" class="card-img-top" alt="Frappe Blend" />
+            <div class="card-body">
+              <h5 class="card-title">Frappe Blend</h5>
+              <p class="card-text">
+                Caramel Machiato, Cookies and Cream, Tiramisu Latte, Mochaccino, Hazelnut Latte, Vanilla Latte
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 menu-card">
+            <img src="https://via.placeholder.com/400x200?text=Ice+Coffee" class="card-img-top" alt="Ice Coffee" />
+            <div class="card-body">
+              <h5 class="card-title">Ice Coffee</h5>
+              <p class="card-text">Kopi Susu Gula Aren, Ice Americano, Ice Latte, Ice Cappuccino</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Non Coffee -->
+        <div class="col">
+          <div class="card h-100 menu-card">
+            <img src="https://via.placeholder.com/400x200?text=Frappe+Non+Coffee" class="card-img-top" alt="Frappe Non Coffee" />
+            <div class="card-body">
+              <h5 class="card-title">Frappe Non Coffee</h5>
+              <p class="card-text">Red Velvet, Taro, Greentea, Chocolate</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 menu-card">
+            <img src="https://via.placeholder.com/400x200?text=Ice+Non+Coffee" class="card-img-top" alt="Ice Non Coffee" />
+            <div class="card-body">
+              <h5 class="card-title">Ice Non Coffee</h5>
+              <p class="card-text">
+                Lemon Tea, Lychee Tea, Blackcurrant Tea, Lemonade Yakult, Lychee Yakult, Blackcurrant Yakult
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food & Snack -->
+        <div class="col">
+          <div class="card h-100 menu-card">
+            <img src="https://via.placeholder.com/400x200?text=Food+%26+Snack" class="card-img-top" alt="Food & Snack" />
+            <div class="card-body">
+              <h5 class="card-title">Food & Snack</h5>
+              <p class="card-text">
+                Rice Bowl Chicken Blackpepper, Chicken Teriyaki, Chicken Katsu, Spaghetti Bolognese, Spaghetti Carbonara,
+                Siomay, Cireng, Sosis Bakar
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 footer">
+    <div class="logo-text">CoffeeVan</div>
+    <small class="d-block mt-2">© 2025 CoffeeVan. All rights reserved.</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+Ini file css untuk index, kopi ,dan menu: /* ========== Base Styles ========== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffefb;
+  color: #5e4a3b;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Logo Font ========== */
+.logo-text {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  color: #5e4a3b !important;
+}
+
+/* ========== Navbar ========== */
+.custom-navbar {
+  background-color: #fffdf8;
+}
+
+.nav-link {
+  color: #5e4a3b !important;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: #a9745f !important;
+}
+
+.btn-login {
+  border: 1px solid #5e4a3b;
+  border-radius: 20px;
+  color: #5e4a3b;
+  padding: 6px 16px;
+  font-size: 14px;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.btn-login:hover {
+  background-color: #5e4a3b;
+  color: #fff;
+}
+
+/* ========== Hero Section (Index) ========== */
+.hero-section {
+  height: 85vh;
+  background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348') center/cover no-repeat;
+  color: #fffefb;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ========== Section Padding ========== */
+.section-padding {
+  padding: 80px 0;
+}
+
+/* ========== Cerita Kami Section ========== */
+.cerita-kami .cerita-img-wrapper {
+  height: 70%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.cerita-img {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  aspect-ratio: 5 / 2.5;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive fix */
+@media (min-width: 768px) {
+  .cerita-kami .row {
+    align-items: stretch;
+  }
+
+  .cerita-kami .col-md-6:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .cerita-img-wrapper,
+  .cerita-img {
+    height: 100%;
+  }
+}
+
+/* ========== Kopi Section (Halaman Kopi) ========== */
+.kopi-section {
+  background: 
+    linear-gradient(rgba(255, 254, 251, 0.342), rgba(66, 65, 62, 0.95)), 
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+  color: #fff6ee;
+  padding: 80px 0;
+}
+
+.kopi-section h2 {
+  color: #a9745f;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.kopi-section h3 {
+  font-size: 22px;
+  color: #5e4a3b;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.kopi-section ul {
+  padding-left: 1rem;
+  list-style-type: square;
+}
+
+.kopi-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.kopi-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+}
+
+/* Responsive layout tweak */
+@media (max-width: 768px) {
+  .kopi-img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.kopi-parallax {
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat fixed;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fffefb;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.kopi-overlay {
+  background-color: rgba(94, 74, 59, 0.55); /* semi-transparent coklat tua */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.kopi-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fffdf8;
+}
+
+.kopi-subtitle {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fdf6ef;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kopi-title {
+    font-size: 36px;
+  }
+  .kopi-subtitle {
+    font-size: 16px;
+  }
+}
+
+/* ========== Menu Section (Halaman Menu) ========== */
+.menu-section {
+  background:
+    linear-gradient(rgba(255, 254, 251, 0.35), rgba(66, 65, 62, 0.9)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+  color: #5e4a3b;
+  padding: 80px 0;
+}
+
+.menu-section h2 {
+  color: #a9745f;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.menu-section h3 {
+  font-size: 22px;
+  color: #5e4a3b;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.menu-section ul {
+  padding-left: 1rem;
+  list-style-type: square;
+}
+
+.menu-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.menu-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(114, 55, 29, 0.478);
+  margin-top: 10px;
+}
+
+/* Responsive layout tweak */
+@media (max-width: 768px) {
+  .menu-img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+Tolong edit style menu nya agar lebih dinamis seperti layout dan elemen kopi estetik, tambah narasi cantik tiap menu nya dan warna teks nya lebih estetik lagi
+

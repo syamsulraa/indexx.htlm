@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Membership - CoffeeVan</title>
+
+  <!-- Bootstrap & CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm py-3 custom-navbar">
+  <div class="container">
+    <a class="navbar-brand logo-text" href="index.html">CoffeeVan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="kopi.html">Kopi</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="member.html">Member</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-lg-block">
+      <a href="login.html" class="btn btn-login">Login</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="member-header text-center">
+  <div class="overlay">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Gabung Jadi Member CoffeeVan</h1>
+      <p class="lead">Nikmati diskon spesial, undangan event eksklusif, dan banyak keuntungan lainnya!</p>
+      <a href="#join" class="btn btn-primary px-4 mt-3">Gabung Sekarang</a>
+    </div>
+  </div>
+</header>
+
+<!-- Benefit Section -->
+<section class="section-padding text-center bg-light">
+  <div class="container">
+    <h2 class="mb-4">Keuntungan Jadi Member</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>☕ Diskon Khusus</h5>
+          <p>Dapatkan potongan harga untuk setiap pembelian minuman dan makanan.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>🎉 Akses Event</h5>
+          <p>Undangan eksklusif ke event komunitas dan kopi tasting.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>🎁 Loyalty Point</h5>
+          <p>Tukar poin dengan hadiah menarik dan minuman gratis.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-3 h-100 shadow-sm">
+          <h5>🚚 Priority Service</h5>
+          <p>Dapatkan prioritas pelayanan di lokasi CoffeeVan terdekat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Join Section -->
+<section id="join" class="section-padding">
+  <div class="container">
+    <h2 class="text-center mb-4">Formulir Pendaftaran</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="nama" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Alamat Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="nohp" class="form-label">Nomor HP</label>
+            <input type="tel" class="form-control" id="nohp" required />
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Daftar Sekarang</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+  <div class="logo-text">CoffeeVan</div>
+  <small>&copy; 2025 CoffeeVan. All rights reserved.</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
