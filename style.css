@@ -1,0 +1,820 @@
+/* ========== Base Styles ========== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffefb;
+  color: #5e4a3b;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Logo Font ========== */
+.logo-text {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  color: #5e4a3b !important;
+}
+
+/* ========== Navbar ========== */
+.custom-navbar {
+  background-color: #fffdf8;
+}
+
+.nav-link {
+  color: #5e4a3b !important;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: #a9745f !important;
+}
+
+.btn-login {
+  border: 1px solid #5e4a3b;
+  border-radius: 20px;
+  color: #5e4a3b;
+  padding: 6px 16px;
+  font-size: 14px;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.btn-login:hover {
+  background-color: #5e4a3b;
+  color: #fff;
+}
+
+/* ========== Hero Section (Index) ========== */
+.hero-section {
+  height: 85vh;
+  background: url('https://images.unsplash.com/photo-1502462041640-b3d7e50d0662?auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+  color: #fffefb;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+  font-size: 48px; /* Sama seperti .kopi-title */
+  font-weight: bold;
+  color: #fffdf8;
+}
+
+/* ========== Section Padding ========== */
+.section-padding {
+  padding: 80px 0;
+}
+
+/* ========== Cerita Kami Section ========== */
+.cerita-kami .cerita-img-wrapper {
+  height: 70%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+ .cerita-img {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  aspect-ratio: 5 / 2.5;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive fix */
+@media (min-width: 768px) {
+  .cerita-kami .row {
+    align-items: stretch;
+  }
+
+  .cerita-kami .col-md-6:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .cerita-img-wrapper,
+  .cerita-img {
+    height: 100%;
+  }
+}
+
+/* ========== Kopi Section (Halaman Kopi) ========== */
+.kopi-section {
+  height: 85vh;background: 
+    linear-gradient(rgba(255, 254, 251, 0.342), rgba(66, 65, 62, 0.95)), 
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+  color: #fff6ee;
+  padding: 80px 0;
+}
+
+.kopi-section h2 {
+  color: #a9745f;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.kopi-section h3 {
+  font-size: 22px;
+  color: #5e4a3b;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.kopi-section ul {
+  padding-left: 1rem;
+  list-style-type: square;
+}
+
+.kopi-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.kopi-img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-top: 10px;
+}
+
+.img-fluid rounded shadow-sm {
+  width: 100%;
+  height: 250px; /* kamu bisa sesuaikan */
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Responsive layout tweak */
+@media (max-width: 768px) {
+  .kopi-img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.kopi-parallax {
+  background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat fixed;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fffefb;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.kopi-overlay {
+  background-color: rgba(94, 74, 59, 0.55); /* semi-transparent coklat tua */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.kopi-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fffdf8;
+}
+
+.kopi-subtitle {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fdf6ef;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kopi-title {
+    font-size: 36px;
+  }
+  .kopi-subtitle {
+    font-size: 16px;
+  }
+}
+
+.menu-section {
+  background: 
+    linear-gradient(rgba(255, 254, 251, 0.342), rgba(66, 65, 62, 0.95)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+  color: #fff6ee; /* supaya kontras dan elegan */
+  padding: 80px 0;
+  /* kamu bisa tambahkan background-attachment: fixed; kalau mau efek parallax */
+  background-attachment: fixed;
+}
+
+.menu-section h2 {
+  color: #a9745f;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.menu-section h3 {
+  font-size: 22px;
+  color: #fff6ee;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.menu-section p,
+.menu-section ul {
+  color: #f1e6dc; /* warna terang untuk teks */
+  line-height: 1.6;
+}
+
+.menu-section ul {
+  padding-left: 1.2rem;
+  list-style-type: square;
+}
+
+.menu-img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+.menu-img:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px; /* kamu bisa sesuaikan */
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Menu Section Specific */
+.menu-header { 
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+  height:85vh;
+  background-attachment: fixed;
+  padding: 80px 0;
+  color: #fff6ee;
+  position: relative;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+.menu-header .overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.menu-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #fffdf8;
+}
+
+.menu-subtitle {
+  font-size: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fffdf8;
+}
+
+/* Cards */
+/* Animasi hover smooth untuk menu card */
+.menu-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(107, 79, 79, 0.6);
+}
+
+/* Tombol action di menu section */
+.menu-btn {
+  display: inline-block;
+  background-color: #a9745f;
+  color: #fffdf8;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(169, 116, 95, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.menu-btn:hover {
+  background-color: #5e4a3b;
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(94, 74, 59, 0.8);
+}
+
+
+.menu-card h5.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.menu-card p.card-text {
+  font-style: italic;
+  color: #8b7c6e;
+  margin-bottom: 15px;
+}
+
+.menu-card ul {
+  padding-left: 1.1rem;
+  list-style-type: disc;
+  color: #5e4a3b;
+  font-weight: 500;
+}
+
+.menu-card ul li {
+  margin-bottom: 6px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .menu-header {
+    padding: 50px 15px;
+  }
+
+  .menu-title {
+    font-size: 2rem;
+  }
+
+  .menu-subtitle {
+    font-size: 1rem;
+  }
+
+  .menu-card {
+    padding: 20px;
+  }
+
+  .menu-card h5.card-title {
+    font-size: 1.25rem;
+  }
+}
+
+.service-section {
+  background: 
+    linear-gradient(rgba(255, 254, 251, 0.342), rgba(66, 65, 62, 0.95)),
+    url('../images/coffee-128013253.jpg') center/cover no-repeat;
+  color: #7d5a3b;
+  padding: 80px 0;
+  background-attachment: fixed;
+}
+
+.service-header {
+  background: url('../images/coffee-128013253.jpg') center/cover no-repeat;
+  height: 85vh;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: #d7915b;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.service-parallax {
+  background: url('../images/coffee-128013253.jpg') center/cover no-repeat fixed;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fffefb;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.service-overlay {
+  background-color: rgba(94, 74, 59, 0.55); /* semi-transparent coklat tua */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.service-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.service-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  color: #fffefb;
+}
+
+/* Service Cards */
+.service-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  color: #fff6ee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 30px rgba(169, 116, 95, 0.4);
+}
+
+.service-card h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fffefb;
+}
+
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fffefb;
+}
+
+/* Service Images */
+.service-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 14px;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.service-img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 2rem;
+  }
+
+  .service-subtitle {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  .service-card h5 {
+    font-size: 1.25rem;
+  }
+}
+
+/*ini member ya*/
+.member-header {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url('../images/serge-esteve-klXhDG8Roj4-unsplash.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  animation: fadeIn 2s ease;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff8f1;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+form .form-control {
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: border-color 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #c38b6d;
+  box-shadow: 0 0 0 0.2rem rgba(195, 139, 109, 0.25);
+}
+
+form .btn {
+  background-color: #c38b6d;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: #a06c4c;
+}
+
+/* Smooth fade */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Style untuk input form */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+}
+
+form input:focus {
+  border-color: #b8860b;
+  box-shadow: 0 0 0 4px rgba(184, 134, 11, 0.2);
+  outline: none;
+}
+
+form label {
+  font-weight: 500;
+  color: #5c4033;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+form .form-control::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+
+/* Kontak Section Styling */
+.contact-section {
+  background:
+    linear-gradient(rgba(255, 254, 251, 0.342), rgba(66, 65, 62, 0.95)),
+    url('../images/coffee-128013253.jpg') center/cover no-repeat;
+  padding: 80px 0;
+  background-attachment: fixed;
+  color: #f1e6dc;
+}
+
+.contact-section h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #fdf9f6;
+}
+
+.contact-section p, 
+.contact-section input,
+.contact-section textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+/* Form Styling */
+form .form-control {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+form .form-control::placeholder {
+  color: #e3d6cc;
+}
+
+form .btn {
+  background-color: #d7915b;
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: #a8673a;
+}
+
+/* Parallax Header */
+.contact-parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../images/coffee-128013253.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+  background-attachment: fixed;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* ========== Login & Signup Pages ========== */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://images.unsplash.com/photo-1520012218364-4f04071d0c6e') center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 40px 20px;
+}
+
+.auth-card {
+  background-color: #fffdf8;
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(94, 74, 59, 0.2);
+}
+
+.auth-card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #5e4a3b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-card label {
+  font-weight: 500;
+  color: #5e4a3b;
+}
+
+.auth-card .form-control {
+  border-radius: 10px;
+  border: 1px solid #d3c6ba;
+  padding: 10px;
+  background-color: #fffefb;
+  color: #5e4a3b;
+}
+
+.auth-card .form-control:focus {
+  border-color: #a9745f;
+  box-shadow: 0 0 0 0.15rem rgba(169, 116, 95, 0.25);
+}
+
+.auth-btn {
+  width: 100%;
+  background-color: #a9745f;
+  border: none;
+  border-radius: 25px;
+  color: #fffdf8;
+  font-weight: 600;
+  padding: 10px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.auth-btn:hover {
+  background-color: #5e4a3b;
+  transform: translateY(-2px);
+}
+
+.auth-card p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #5e4a3b;
+}
+
+.auth-card p a {
+  color: #a9745f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-card p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 30px 20px;
+  }
+
+  .auth-card h2 {
+    font-size: 24px;
+  }
+}
+
+.auth-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 60px 15px;
+}
+
+.auth-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.auth-wrapper h2 {
+  color: #5e4a3b;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.auth-wrapper .form-control {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-wrapper .btn-auth {
+  background-color: #a9745f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  width: 100%;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.auth-wrapper .btn-auth:hover {
+  background-color: #5e4a3b;
+}
+
+.auth-wrapper p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #5e4a3b;
+}
